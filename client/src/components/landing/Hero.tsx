@@ -42,7 +42,7 @@ const Hero = (props: Props) => {
             {/* Partner Logos */}
             <div className="w-full mt-20 flex flex-col items-center text-sm text-[#9E9E9E] space-y-4">
                 <p className="font-bold">Chosen by</p>
-                <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12">
+                <div className="flex-center flex-wrap  gap-4 sm:gap-8 md:gap-12">
                     {Object.entries(logos).map(([name, src]) => (
                         <img key={name} src={src} alt={name} className="h-4" />
                     ))}

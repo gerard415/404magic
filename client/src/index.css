@@ -16,7 +16,11 @@
   }
 
   p {
-    @apply text-base/8  
+    @apply text-sm/8 sm:text-base/8
+  }
+
+  h2 {
+    @apply text-3xl font-bold text-gray-900 mb-4
   }
 }
 

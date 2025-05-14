@@ -16,7 +16,7 @@ const Navbar = (props: Props) => {
             <div className='flex items-center justify-between'>
                 {/* Logo */}
                 <Link to={'/'} className='text-xl font-bold' >
-                    404magic
+                    404<span className='text-primary'>magic</span> 
                 </Link>
 
                 {/* Desktop menu */}
