@@ -12,7 +12,7 @@ const Navbar = (props: Props) => {
 
 
     return (
-        <nav className=' w-full  py-4'>
+        <nav className='container-layout py-4'>
             <div className='flex items-center justify-between'>
                 {/* Logo */}
                 <Link to={'/'} className='text-xl font-bold' >

@@ -11,16 +11,30 @@
 }
 
 @layer base {
+  h1 {
+    @apply text-[clamp(40px,10vw,80px)] font-bold leading-tight
+  }
 
+  p {
+    @apply text-base/8  
+  }
 }
 
 @layer components {
   .btn-primary-100 {
-      @apply bg-primary text-white py-2 px-4 text-sm rounded-md flex text-center cursor-pointer hover:opacity-75
+      @apply bg-primary text-white py-2 px-4 text-[12px] rounded-md flex text-center cursor-pointer hover:opacity-75
   }
 
   .btn-primary-200 {
-    @apply bg-white px-4 py-2 rounded-md text-sm flex text-center cursor-pointer text-[#1C160C] hover:text-primary transition
+    @apply bg-white px-4 py-2 rounded-md text-[12px] flex text-center cursor-pointer text-[#1C160C] hover:text-primary transition
+  }
+
+  .root-layout {
+    @apply max-w-screen min-h-screen font-manrope overflow-x-hidden 
+  }
+
+  .container-layout {
+    @apply px-4 md:px-10 w-full
   }
 }
 
