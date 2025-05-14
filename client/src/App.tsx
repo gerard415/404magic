@@ -1,12 +1,19 @@
 import React from 'react'
+import { Route, Routes } from 'react-router'
+import LandingPageLayout from './layouts/LandingPageLayout'
+import HomePage from './pages/home/HomePage'
 
 type Props = {}
 
 const App = (props: Props) => {
   return (
-    <div className='font-manrope'>
-      Hello World
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<LandingPageLayout/>}>
+            <Route index element={<HomePage/>} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
