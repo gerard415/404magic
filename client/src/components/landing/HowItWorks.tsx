@@ -4,7 +4,7 @@ type Props = {}
 
 const HowItWorks = (props: Props) => {
   return (
-    <section className='container-layout bg-white py-16'>
+    <section id='howitworks' className='container-layout bg-white py-16'>
         <div className=''>
             <div className="text-center mb-16">
                 <h2>

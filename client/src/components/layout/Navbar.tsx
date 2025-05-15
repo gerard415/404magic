@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from '../ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router';
 
@@ -23,17 +22,17 @@ const Navbar = (props: Props) => {
                 <ul className="hidden lg:flex items-center ">
                     <li>
                         <button className="btn-primary-200">
-                            <a href="#features">Features</a>
+                            <a href="#howitworks">How it Works</a>
                         </button>
                     </li>
                     <li>
                         <button className="btn-primary-200">
-                            <a href="#examples">Examples</a>
+                            <a href="#featured">Examples</a>
                         </button>
                     </li>
                     <li>
                         <button className='btn-primary-200'>
-                            <a href="#prices">Prices</a>
+                            <a href="#pricing">Prices</a>
                         </button>
                     </li>
                     <li>
