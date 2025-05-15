@@ -3,8 +3,8 @@ type Props = {}
 
 const Pricing = (props: Props) => {
   return (
-    <section id="pricing" className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <section id="pricing" className="bg-white  dark:bg-gray-900">
+        <div className=" px-4 mx-auto max-w-screen-xl py-16 lg:px-6">
             <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                 <h2 className="mb-4  dark:text-white">Designed for <span className="text-primary">Anybody</span></h2>
                 <p className="mb-5 font-light text-gray-500  dark:text-gray-400">Simple, transparent pricing for every plan—scale from free templates to enterprise-grade error management with no hidden fees.</p>
@@ -39,7 +39,7 @@ const Pricing = (props: Props) => {
                             <span>Free updates: <span className="font-semibold">6 months</span></span>
                         </li>
                     </ul>
-                    <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                    <a href="#" className="text-primary border focus:ring-4 hover:outline-1 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                 </div>
                 <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <h3 className="mb-4 text-2xl font-semibold">Pro</h3>
@@ -70,7 +70,7 @@ const Pricing = (props: Props) => {
                             <span>Free updates: <span className="font-semibold">24 months</span></span>
                         </li>
                     </ul>
-                    <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                    <a href="#" className="text-primary hover:outline-1 border focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                 </div>
                 <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                     <h3 className="mb-4 text-2xl font-semibold">Business</h3>
@@ -101,7 +101,7 @@ const Pricing = (props: Props) => {
                             <span>Free updates: <span className="font-semibold">36 months</span></span>
                         </li>
                     </ul>
-                    <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                    <a href="#" className="text-primary border hover:outline-1 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                 </div>
             </div>
         </div>

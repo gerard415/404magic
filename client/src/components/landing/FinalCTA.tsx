@@ -9,10 +9,10 @@ const FinalCTA = () => {
                 Join 1,200+ developers making their error pages unforgettable
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-                <button className="px-8 py-3 bg-white text-primary font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
+                <button className="cursor-pointer px-8 py-3 bg-white text-primary font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
                 Get Started Free
                 </button>
-                <button className="px-8 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
+                <button className="cursor-pointer px-8 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
                 Book Demo
                 </button>
             </div>

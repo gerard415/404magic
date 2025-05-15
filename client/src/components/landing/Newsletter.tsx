@@ -3,7 +3,7 @@ import { Checkbox } from "../ui/checkbox"
 
 const Newsletter = () => {
   return (
-    <section className='bg-secondary px-4 lg:px-10 pt-24 space-y-16  '>
+    <section className='bg-secondary px-4 lg:px-10 py-16 space-y-16  '>
         <div className='text-center md:flex-center md:justify-between md:gap-8 '>
             <div className=' mb-10 md:m-0'>
                 <h2 className='text-3xl font-bold mb-6'>Subscribe to our newsletter</h2>

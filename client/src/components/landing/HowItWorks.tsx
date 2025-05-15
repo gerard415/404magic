@@ -57,10 +57,10 @@ const HowItWorks = (props: Props) => {
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="flex-center w-8 h-8 rounded-full bg-primary text-white font-bold">
+                  <span className="flex-center min-w-8 h-8 rounded-full bg-primary text-white font-bold">
                     {item.step}
                   </span>
-                  <h3 className="font-bold text-lg">{item.title}</h3>
+                  <h3 className="font-bold  text-md">{item.title}</h3>
                 </div>
                 <p className="text-gray-600 mb-4">{item.description}</p>
                 {item.extra}
