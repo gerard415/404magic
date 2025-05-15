@@ -22,19 +22,13 @@ const Navbar = (props: Props) => {
                 {/* Desktop menu */}
                 <ul className="hidden md:flex items-center ">
                     <li>
-                        <button className="btn-primary-200">
-                            <a href="#howitworks">How it Works</a>
-                        </button>
+                        <Link to="/#howitworks" className="btn-primary-200">How it Works</Link>
                     </li>
                     <li>
-                        <button className="btn-primary-200">
-                            <a href="#featured">Featured</a>
-                        </button>
+                        <Link to="/#featured" className="btn-primary-200">Featured</Link>
                     </li>
                     <li>
-                        <button className='btn-primary-200'>
-                            <a href="#pricing">Pricing</a>
-                        </button>
+                        <Link to="/#pricing" className="btn-primary-200">Pricing</Link>
                     </li>
                     <li>
                         <Link to="/templates" className="btn-primary-200">Templates</Link>
