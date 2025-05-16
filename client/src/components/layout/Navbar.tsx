@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router';
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/clerk-react';
+import { ChartBarSquareIcon } from '@heroicons/react/24/solid'
 
 type Props = {}
 
@@ -38,10 +40,26 @@ const Navbar = (props: Props) => {
                 </ul>
 
                 <div className="flex-center gap-2">
-                    <button className="btn-primary-100">Sign Up</button>
-                    <button className=" hidden font-bold md:block btn-primary-200">
-                        Log in
-                    </button>
+                    <SignedOut>
+                        <SignUpButton mode='modal' >
+                           <button className="btn-primary-100">Sign Up</button> 
+                        </SignUpButton>
+                        
+                        <SignInButton mode='modal' >
+                            <button className=" hidden font-bold md:block btn-primary-200">Log in</button>
+                        </SignInButton>
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton>
+                            <UserButton.MenuItems>
+                            <UserButton.Link
+                                label="Dashboard"
+                                labelIcon={<ChartBarSquareIcon />}
+                                href="/dashboard"
+                            />
+                            </UserButton.MenuItems>
+                        </UserButton>
+                    </SignedIn>
 
                     {/* Mobile menu toggle */}
                     <button
@@ -70,9 +88,12 @@ const Navbar = (props: Props) => {
                     <li>
                         <Link onClick={() => setIsOpen(false)} to="/templates" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Templates</Link>
                     </li>
-                    <li>
-                        <Link onClick={() => setIsOpen(false)} to="/login" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Log In</Link>
-                    </li>
+                    <SignedOut>
+                        <li>
+                            <Link onClick={() => setIsOpen(false)} to="/login" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Log In</Link>
+                        </li>
+                    </SignedOut>
+                    
                 </ul>
                 </div>  
         </nav>
