@@ -43,6 +43,10 @@
   .container-layout {
     @apply px-4 md:px-10 w-full
   }
+
+  .dashboard-layout {
+    @apply h-screen bg-white font-manrope
+  }
 }
 
 
