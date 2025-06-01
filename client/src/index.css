@@ -29,11 +29,15 @@
 
 @layer components {
   .btn-primary-100 {
-      @apply bg-primary text-white py-2 px-4 text-[12px] rounded-md text-center cursor-pointer hover:opacity-75
+      @apply bg-primary text-white py-2 px-4 text-xs rounded-md text-center cursor-pointer hover:opacity-75
   }
 
   .btn-primary-200 {
-    @apply bg-white px-4 py-2 rounded-md text-[12px] flex text-center cursor-pointer text-[#1C160C] hover:text-primary transition
+    @apply bg-white px-4 py-2 rounded-md text-xs flex text-center cursor-pointer text-[#1C160C] hover:text-primary transition
+  }
+
+  .btn-primary-300 {
+    @apply bg-gray-100 px-5 rounded-md text-xs py-2 cursor-pointer hover:bg-gray-200
   }
 
   .root-layout {
