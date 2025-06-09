@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ElipsisIcon, LinkIcon, PencilIcon, SearchIcon } from '../../components/ui/Icons';
-import Select from '../../components/ui/Select';
 import { Link } from 'react-router';
+import CustomSelect from '../../components/ui/CustomSelect';
 
 const pages = [
   {
@@ -59,7 +59,7 @@ const Dashboard404pages = () => {
             </div>
             <input type="search" id="default-search" className="block cursor-pointer hover:bg-gray-100 outline-none w-full p-2 ps-10 text-xs  border border-gray-300 rounded-md bg-gray-50 focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
         </div>
-        <Select
+        <CustomSelect
           options={options}
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
