@@ -51,8 +51,8 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/themes" className={linkClasses}>
-              {collapsed ? <div><ThemesIcon /></div> : <div className='flex items-center gap-4'><ThemesIcon/> Themes</div>}
+            <NavLink to="/dashboard/integrations" className={linkClasses}>
+              {collapsed ? <div><ThemesIcon /></div> : <div className='flex items-center gap-4'><ThemesIcon/> Integrations</div>}
             </NavLink>
           </li>
           <li>

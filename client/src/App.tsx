@@ -7,9 +7,9 @@ import DashboardLayout from './layouts/DashboardLayout'
 import DashboardOverview from './pages/dashboard/DashboardOverview'
 import Dashboard404pages from './pages/dashboard/Dashboard404pages'
 import DashboardAnalytics from './pages/dashboard/DashboardAnalytics'
-import DashboardThemes from './pages/dashboard/DashboardThemes'
 import DashboardSettings from './pages/dashboard/DashboardSettings'
 import Create404page from './pages/dashboard/Create404page'
+import DashboardIntegrations from './pages/dashboard/DashboardIntegrations'
 
 type Props = {}
 
@@ -26,7 +26,7 @@ const App = (props: Props) => {
             <Route path='/dashboard/404pages' element={<Dashboard404pages/>} />
             <Route path='/dashboard/404pages/create' element={<Create404page/>} />
             <Route path='/dashboard/analytics' element={<DashboardAnalytics/>} />
-            <Route path='/dashboard/themes' element={<DashboardThemes/>} />
+            <Route path='/dashboard/integrations' element={<DashboardIntegrations/>} />
             <Route path='/dashboard/settings' element={<DashboardSettings/>} />
         </Route>
       </Routes>
