@@ -21,7 +21,7 @@ const IntegrationsCard: React.FC<IntegrationsCardProps> = ({
   return (
     <div className="w-70 h-30 border border-gray-300 rounded-md flex flex-col justify-between p-2">
       <div className="flex justify-between items-center">
-        <Icon />
+        <Icon className='w-6 h-6' />
         <label className="inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
@@ -31,7 +31,7 @@ const IntegrationsCard: React.FC<IntegrationsCardProps> = ({
           />
           <div className="relative w-10 h-5 bg-gray-200 rounded-full peer
               peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
-              peer-checked:after:border-white
+              peer-checked:after:border-white peer-checked:after:start-[6px]
               after:content-[''] after:absolute after:top-[2px] after:start-[2px]
               after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4
               after:transition-all dark:border-gray-600
